@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2024-07-28)
+
+
+### Features
+
+* **init:** initialize based on as-command ([b0944d1](https://github.com/ehmpathy/pagination-fns/commit/b0944d1a3b9178d1371b80dfe80e7eb4e8071c4c))
+
 ## [1.0.1](https://github.com/ehmpathy/as-command/compare/v1.0.0...v1.0.1) (2024-05-26)
 
 
