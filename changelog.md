@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ehmpathy/pagination-fns/compare/v1.0.0...v1.0.1) (2024-09-14)
+
+
+### Bug Fixes
+
+* **types:** allow pick any range filters, rather than just one ([3dfa7fc](https://github.com/ehmpathy/pagination-fns/commit/3dfa7fc4d4b104d51fec08fc37f4b38a92c9a443))
+
 ## 1.0.0 (2024-07-28)
 
 
