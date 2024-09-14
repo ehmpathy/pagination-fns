@@ -20,7 +20,7 @@ export type PaginationInput<TRangeShape> = {
   /**
    * the range of items to include in this page
    */
-  range: PickAny<{
+  range: Partial<{
     /**
      * .what = filter to items with values of this range key
      *   - filter on `item.value >= since.value`
