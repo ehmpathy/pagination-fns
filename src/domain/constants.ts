@@ -1,4 +1,4 @@
-import { PickOne } from 'type-fns';
+import { PickAny, PickOne } from 'type-fns';
 
 /**
  * .what = the shape of pagination request inputs
@@ -10,10 +10,8 @@ import { PickOne } from 'type-fns';
  *     - .since => `>=`
  *     - .until => `<`
  *     - .uptil => `<=`
- *   - the page.range will specify the order to sort the items on the page with
- *     - .since => sort asc
- *     - .until => sort desc
- *     - .uptil => sort desc
+ *   - the page.order will specify the order to sort the items on the page with
+ *     - asc | desc
  *
  * todo
  * - support range having more than one filter
@@ -22,28 +20,30 @@ export type PaginationInput<TRangeShape> = {
   /**
    * the range of items to include in this page
    */
-  range: PickOne<{
+  range: PickAny<{
     /**
      * .what = filter to items with values of this range key
      *   - filter on `item.value >= since.value`
-     *   - order on values ASC
      */
     since: TRangeShape;
 
     /**
      * .what = filter to items with values of this range key
      *   - filter on `item.value < since.value`
-     *   - order on values DESC
      */
     until: TRangeShape;
 
     /**
      * .what = filter to items with values of this range key
      *   - filter on `item.value <= since.value`
-     *   - order on values DESC
      */
     uptil: TRangeShape;
   }>;
+
+  /**
+   * the order with which to sort on the range key
+   */
+  order: 'ASC' | 'DESC';
 
   /**
    * the limit of items to include in this page
