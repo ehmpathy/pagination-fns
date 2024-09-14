@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ehmpathy/pagination-fns/compare/v1.0.1...v1.0.2) (2024-09-14)
+
+
+### Bug Fixes
+
+* **types:** allow fully optional page.range input ([8a7e36e](https://github.com/ehmpathy/pagination-fns/commit/8a7e36e46d6f9b11309f5b3750d410cd7abcd6c3))
+
 ## [1.0.1](https://github.com/ehmpathy/pagination-fns/compare/v1.0.0...v1.0.1) (2024-09-14)
 
 
